@@ -1,0 +1,8 @@
+<h2>Create New Account</h2>
+
+<form method="POST">
+    {% crsf_token %}
+    {{form.as_p}}
+    <button type="submit">Register</button>
+</form>
+<p>Already have an account?<a herf="/login/login here"></a></p>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title> Course list </title>
+    <body>
+        <table border="1" cellpadding="18">
+            <tr>
+                <th>course</th>
+                <th>duration</th>
+                <th>fees</th>
+            </tr>
+            {% for s in course %}
+            <tr>
+                <td>{{s.course}}</td>
+                <td>{{s.duration}}</td>
+                <td>{{s.fees}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

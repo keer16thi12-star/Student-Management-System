@@ -1,0 +1,14 @@
+<h2>Active Course</h2>
+<table border="1">
+<tr>
+    <th>Name</th><th>Trainer</th>
+    <th>Fees</th>
+</tr>
+{% for c in course_list %}
+<tr>
+    <td>{{c.course_list}}</td>
+    <td>{{c.trainer}}</td>
+    <td>{{c.fees}}</td>
+</tr>
+{% endfor %}
+</table>
